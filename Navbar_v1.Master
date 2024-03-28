@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Navbar_v1.master.cs" Inherits="MP_CS107L.Navbar_v1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%-- Bootstrap --%>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <title></title>
+
+</head>
+<body>
+    <%-- Navbar --%>
+    <div class="container-fluid navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- Logo -->
+                <a href="Home.aspx">
+                    <img src="/images/decorations/logo.png" height="50" class="d-inline-block align-top" alt="">
+                </a>
+
+
+                <%--<img href="Home.aspx" src="/images/decorations/logo.png" width="10%" height="50" class="d-inline-block align-top" alt="">--%>
+                <%--<a class="navbar-brand" href="Home.aspx">Dan's Cafe</a>--%>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</body>
+</html>

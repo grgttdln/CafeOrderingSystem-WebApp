@@ -1,0 +1,106 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    /* background-color: antiquewhite; */
+}
+
+.contact-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.title {
+    margin: 30px;
+}
+
+    .title h2 {
+        font-size: 2.5rem; /* Adjust font size for large screens */
+    }
+
+    .title p {
+        margin: 0 auto;
+        max-width: 800px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+.contactUs {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card {
+    flex: 1 1 200px;
+    margin: 0 10px; 
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    max-width: 300px; 
+    min-width: 200px;
+}
+
+    .card .icon {
+        font-size: 2rem; /* Adjust icon size for large screens */
+        margin-bottom: 10px;
+    }
+
+    .card h4 {
+        font-size: 1.2rem; /* Adjust heading size for large screens */
+        margin-bottom: 10px;
+    }
+
+.Button {
+    font-size: 1rem; /* Adjust button size for large screens */
+    text-decoration: none;
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+}
+
+.btnStyle {
+    /*background-color: #B99470;*/ 
+    color: #fff; 
+    background-color: rgb(56, 27, 13);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    width: auto; 
+    padding: 6px 10px; 
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+    .btnStyle:hover {
+        background-color: #8f6f56; 
+    }
+
+    .btnStyle:active {
+        background-color: #6c543d;
+    }
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 700px) {
+    .contactUs {
+        flex-direction: column; /* Stack cards vertically */
+    }
+
+    .card {
+        margin: 20px 0; 
+    }
+}

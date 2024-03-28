@@ -1,0 +1,10 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE;
+}
+
+.main--container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
